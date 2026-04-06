@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "7a35c249-1d42-4f0b-9c88-e2c349ebdb26",
+		"name": "Finance Dashboard API",
+		"description": "Internal company finance tool with RBAC, soft deletes, and Redis-cached analytics.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Auth (Public)",
+			"item": [
+				{
+					"name": "Login as Admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"if (pm.response.code === 200) {",
+									"    var data = pm.response.json();",
+									"    pm.environment.set(\"admin_token\", data.access);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"admin\",\n    \"password\": \"admin123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/auth/login/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Get My Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/auth/me/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"me",
+								""
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "2. User Management (Admin Only)",
+			"item": [
+				{
+					"name": "List Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/users/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Create Viewer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"ceo_viewer\",\n    \"password\": \"secure_password123\",\n    \"email\": \"ceo@company.com\",\n    \"role\": \"VIEWER\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/users/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "3. Financial Records (Admin Write, Viewer+ Read)",
+			"item": [
+				{
+					"name": "Create Income",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"150000.00\",\n    \"record_type\": \"INCOME\",\n    \"category\": \"CLIENT_REVENUE\",\n    \"date\": \"2025-10-01\",\n    \"notes\": \"Q4 Retainer\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/records/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Create Expense",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"amount\": \"45000.00\",\n    \"record_type\": \"EXPENSE\",\n    \"category\": \"SALARIES\",\n    \"date\": \"2025-10-31\",\n    \"notes\": \"October Payroll\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/api/records/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "List All Records (Filterable)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/records/?record_type=EXPENSE&search=Payroll",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"records",
+								""
+							],
+							"query": [
+								{
+									"key": "record_type",
+									"value": "EXPENSE"
+								},
+								{
+									"key": "search",
+									"value": "Payroll"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "4. Dashboard (Redis-cached analytics)",
+			"item": [
+				{
+					"name": "Summary (Viewer+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/summary/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"summary",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Cost Center Breakdown (Viewer+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/cost-center-breakdown/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"cost-center-breakdown",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Revenue Breakdown (Viewer+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/revenue-breakdown/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"revenue-breakdown",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "People Cost Ratio (Viewer+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/people-cost-ratio/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"people-cost-ratio",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Monthly Trends (Analyst+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/monthly-trends/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"monthly-trends",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Burn Rate (Analyst+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/burn-rate/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"burn-rate",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "Runway (Analyst+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/runway/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"runway",
+								""
+							]
+						}
+					}
+				},
+				{
+					"name": "MoM Change (Analyst+)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{admin_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/dashboard/mom-change/",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"mom-change",
+								""
+							]
+						}
+					}
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://127.0.0.1:8000"
+		},
+		{
+			"key": "admin_token",
+			"value": ""
+		}
+	]
+}

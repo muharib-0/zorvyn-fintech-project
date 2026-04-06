@@ -1,0 +1,689 @@
+[
+  {
+    "amount": "185000.00",
+    "record_type": "EXPENSE",
+    "category": "OFFICE_RENT",
+    "date": "2025-01-01",
+    "notes": "Monthly office rent for HQ - Koramangala, Bengaluru. Paid to property owner via NEFT."
+  },
+  {
+    "amount": "185000.00",
+    "record_type": "EXPENSE",
+    "category": "OFFICE_RENT",
+    "date": "2025-02-01",
+    "notes": "Monthly office rent for HQ - Koramangala, Bengaluru."
+  },
+  {
+    "amount": "185000.00",
+    "record_type": "EXPENSE",
+    "category": "OFFICE_RENT",
+    "date": "2025-03-01",
+    "notes": "Monthly office rent for HQ - Koramangala, Bengaluru."
+  },
+  {
+    "amount": "185000.00",
+    "record_type": "EXPENSE",
+    "category": "OFFICE_RENT",
+    "date": "2025-04-01",
+    "notes": "Monthly office rent for HQ - Koramangala, Bengaluru. Rent revision due in June."
+  },
+
+  {
+    "amount": "1250000.00",
+    "record_type": "EXPENSE",
+    "category": "SALARIES",
+    "date": "2025-01-31",
+    "notes": "January payroll disbursement for 18 full-time employees. Includes TDS deductions."
+  },
+  {
+    "amount": "1250000.00",
+    "record_type": "EXPENSE",
+    "category": "SALARIES",
+    "date": "2025-02-28",
+    "notes": "February payroll disbursement for 18 full-time employees."
+  },
+  {
+    "amount": "1340000.00",
+    "record_type": "EXPENSE",
+    "category": "SALARIES",
+    "date": "2025-03-31",
+    "notes": "March payroll. Two new hires added mid-month — prorated salary included."
+  },
+  {
+    "amount": "1340000.00",
+    "record_type": "EXPENSE",
+    "category": "SALARIES",
+    "date": "2025-04-30",
+    "notes": "April payroll disbursement for 20 full-time employees."
+  },
+
+  {
+    "amount": "95000.00",
+    "record_type": "EXPENSE",
+    "category": "CONTRACTOR_FEES",
+    "date": "2025-01-15",
+    "notes": "Payment to Rajan Mehta (UI/UX Contractor) for January deliverables — 3 screen designs."
+  },
+  {
+    "amount": "60000.00",
+    "record_type": "EXPENSE",
+    "category": "CONTRACTOR_FEES",
+    "date": "2025-02-20",
+    "notes": "Freelance backend developer — API integration work for client portal. Invoice #CTR-2025-02."
+  },
+  {
+    "amount": "120000.00",
+    "record_type": "EXPENSE",
+    "category": "CONTRACTOR_FEES",
+    "date": "2025-03-10",
+    "notes": "Content writing agency — 20 blog posts and 5 case studies for Q1 marketing push."
+  },
+  {
+    "amount": "75000.00",
+    "record_type": "EXPENSE",
+    "category": "CONTRACTOR_FEES",
+    "date": "2025-04-18",
+    "notes": "Data analyst contractor — monthly retainer for dashboard reporting work."
+  },
+
+  {
+    "amount": "87500.00",
+    "record_type": "EXPENSE",
+    "category": "EMPLOYEE_BENEFITS",
+    "date": "2025-01-31",
+    "notes": "Group health insurance premium — Q1 payment for all full-time employees. Provider: Star Health."
+  },
+  {
+    "amount": "22000.00",
+    "record_type": "EXPENSE",
+    "category": "EMPLOYEE_BENEFITS",
+    "date": "2025-02-14",
+    "notes": "Team lunch and outing for 18 employees — quarterly team bonding event."
+  },
+  {
+    "amount": "45000.00",
+    "record_type": "EXPENSE",
+    "category": "EMPLOYEE_BENEFITS",
+    "date": "2025-03-31",
+    "notes": "Gym and wellness reimbursements for Q1. 12 employees claimed."
+  },
+  {
+    "amount": "87500.00",
+    "record_type": "EXPENSE",
+    "category": "EMPLOYEE_BENEFITS",
+    "date": "2025-04-30",
+    "notes": "Group health insurance premium — Q2 payment."
+  },
+
+  {
+    "amount": "55000.00",
+    "record_type": "EXPENSE",
+    "category": "RECRUITMENT",
+    "date": "2025-01-20",
+    "notes": "LinkedIn Recruiter license renewal — 3 seat subscription for HR team."
+  },
+  {
+    "amount": "30000.00",
+    "record_type": "EXPENSE",
+    "category": "RECRUITMENT",
+    "date": "2025-03-05",
+    "notes": "Job portal listings on Naukri and Instahyre — Q1 hiring drive for 4 open positions."
+  },
+  {
+    "amount": "80000.00",
+    "record_type": "EXPENSE",
+    "category": "RECRUITMENT",
+    "date": "2025-04-12",
+    "notes": "Recruitment agency fee — one-time placement fee for Senior Backend Engineer hire."
+  },
+
+  {
+    "amount": "18500.00",
+    "record_type": "EXPENSE",
+    "category": "SOFTWARE_TOOLS",
+    "date": "2025-01-05",
+    "notes": "Notion Team plan — annual subscription prorated monthly. Workspace for 20 users."
+  },
+  {
+    "amount": "42000.00",
+    "record_type": "EXPENSE",
+    "category": "SOFTWARE_TOOLS",
+    "date": "2025-01-10",
+    "notes": "GitHub Teams + Actions minutes overage — January billing cycle."
+  },
+  {
+    "amount": "28000.00",
+    "record_type": "EXPENSE",
+    "category": "SOFTWARE_TOOLS",
+    "date": "2025-02-05",
+    "notes": "Figma Professional plan for design team — 4 seats. Annual plan billed monthly."
+  },
+  {
+    "amount": "15000.00",
+    "record_type": "EXPENSE",
+    "category": "SOFTWARE_TOOLS",
+    "date": "2025-03-08",
+    "notes": "Postman API platform — team plan renewal for 10 developers."
+  },
+  {
+    "amount": "35000.00",
+    "record_type": "EXPENSE",
+    "category": "SOFTWARE_TOOLS",
+    "date": "2025-04-07",
+    "notes": "Jira Software + Confluence — Atlassian Cloud subscription for 20 users."
+  },
+
+  {
+    "amount": "24000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-01-08",
+    "notes": "Claude Pro team subscription — 10 seats for engineering and product team."
+  },
+  {
+    "amount": "18000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-01-12",
+    "notes": "GitHub Copilot Business — 12 developer seats. Monthly billing."
+  },
+  {
+    "amount": "24000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-02-08",
+    "notes": "Claude Pro team subscription — February billing."
+  },
+  {
+    "amount": "18000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-02-12",
+    "notes": "GitHub Copilot Business — February billing."
+  },
+  {
+    "amount": "9500.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-03-15",
+    "notes": "OpenAI API usage charges — GPT-4o integration for document parsing feature. March billing."
+  },
+  {
+    "amount": "24000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-03-08",
+    "notes": "Claude Pro team subscription — March billing."
+  },
+  {
+    "amount": "24000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-04-08",
+    "notes": "Claude Pro team subscription — April billing."
+  },
+  {
+    "amount": "21000.00",
+    "record_type": "EXPENSE",
+    "category": "AI_TOOLS",
+    "date": "2025-04-12",
+    "notes": "GitHub Copilot Business — April billing. Two additional seats added."
+  },
+
+  {
+    "amount": "68000.00",
+    "record_type": "EXPENSE",
+    "category": "CLOUD_INFRASTRUCTURE",
+    "date": "2025-01-31",
+    "notes": "AWS bill — January. EC2 (t3.medium x4), RDS PostgreSQL, S3 storage, CloudFront CDN."
+  },
+  {
+    "amount": "71000.00",
+    "record_type": "EXPENSE",
+    "category": "CLOUD_INFRASTRUCTURE",
+    "date": "2025-02-28",
+    "notes": "AWS bill — February. Spike in data transfer due to product demo for enterprise client."
+  },
+  {
+    "amount": "68000.00",
+    "record_type": "EXPENSE",
+    "category": "CLOUD_INFRASTRUCTURE",
+    "date": "2025-03-31",
+    "notes": "AWS bill — March. Reserved instance for RDS activated — cost reduced from previous month."
+  },
+  {
+    "amount": "74000.00",
+    "record_type": "EXPENSE",
+    "category": "CLOUD_INFRASTRUCTURE",
+    "date": "2025-04-30",
+    "notes": "AWS bill — April. Added ElastiCache (Redis) cluster for dashboard caching layer."
+  },
+
+  {
+    "amount": "95000.00",
+    "record_type": "EXPENSE",
+    "category": "EQUIPMENT_HARDWARE",
+    "date": "2025-01-22",
+    "notes": "2x MacBook Air M2 for new engineering hires. Purchased from Apple India. Asset tagged."
+  },
+  {
+    "amount": "24000.00",
+    "record_type": "EXPENSE",
+    "category": "EQUIPMENT_HARDWARE",
+    "date": "2025-02-10",
+    "notes": "Standing desk and ergonomic chair for 2 workstations. Vendor: Godrej Interio."
+  },
+  {
+    "amount": "18000.00",
+    "record_type": "EXPENSE",
+    "category": "EQUIPMENT_HARDWARE",
+    "date": "2025-03-18",
+    "notes": "External monitors (27 inch, 4K) x2 for design team."
+  },
+
+  {
+    "amount": "12500.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-01-31",
+    "notes": "Office electricity bill — January. BESCOM. Higher than usual due to cold weather AC usage."
+  },
+  {
+    "amount": "8400.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-01-31",
+    "notes": "Leased line internet — January. 200 Mbps dedicated line. Provider: ACT Fibernet."
+  },
+  {
+    "amount": "11800.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-02-28",
+    "notes": "Office electricity bill — February."
+  },
+  {
+    "amount": "8400.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-02-28",
+    "notes": "Leased line internet — February."
+  },
+  {
+    "amount": "12100.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-03-31",
+    "notes": "Office electricity bill — March."
+  },
+  {
+    "amount": "8400.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-03-31",
+    "notes": "Leased line internet — March."
+  },
+  {
+    "amount": "12800.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-04-30",
+    "notes": "Office electricity bill — April. Summer cooling costs rising."
+  },
+  {
+    "amount": "8400.00",
+    "record_type": "EXPENSE",
+    "category": "UTILITIES_INTERNET",
+    "date": "2025-04-30",
+    "notes": "Leased line internet — April."
+  },
+
+  {
+    "amount": "150000.00",
+    "record_type": "EXPENSE",
+    "category": "ADVERTISING_MARKETING",
+    "date": "2025-01-18",
+    "notes": "Google Ads campaign — Q1 lead generation. Target: SaaS decision makers in India and SEA."
+  },
+  {
+    "amount": "85000.00",
+    "record_type": "EXPENSE",
+    "category": "ADVERTISING_MARKETING",
+    "date": "2025-02-05",
+    "notes": "LinkedIn sponsored content — February campaign. 3 promoted posts targeting HR and finance roles."
+  },
+  {
+    "amount": "45000.00",
+    "record_type": "EXPENSE",
+    "category": "ADVERTISING_MARKETING",
+    "date": "2025-03-20",
+    "notes": "Sponsorship at SaaSBOOMi 2025 — booth and branding package."
+  },
+  {
+    "amount": "120000.00",
+    "record_type": "EXPENSE",
+    "category": "ADVERTISING_MARKETING",
+    "date": "2025-04-10",
+    "notes": "Google Ads — Q2 campaign. Increased budget based on Q1 ROAS performance."
+  },
+
+  {
+    "amount": "35000.00",
+    "record_type": "EXPENSE",
+    "category": "FOOD_BEVERAGES",
+    "date": "2025-01-31",
+    "notes": "Monthly office snacks, tea, coffee supplies. Vendor: iD Fresh + local supplier."
+  },
+  {
+    "amount": "52000.00",
+    "record_type": "EXPENSE",
+    "category": "FOOD_BEVERAGES",
+    "date": "2025-02-28",
+    "notes": "Team lunch for client visit (8 guests + 10 team members). Restaurant: Truffles, Koramangala."
+  },
+  {
+    "amount": "35000.00",
+    "record_type": "EXPENSE",
+    "category": "FOOD_BEVERAGES",
+    "date": "2025-03-31",
+    "notes": "Monthly office snacks and beverages — March."
+  },
+  {
+    "amount": "35000.00",
+    "record_type": "EXPENSE",
+    "category": "FOOD_BEVERAGES",
+    "date": "2025-04-30",
+    "notes": "Monthly office snacks and beverages — April."
+  },
+
+  {
+    "amount": "28000.00",
+    "record_type": "EXPENSE",
+    "category": "TRAVEL_TRANSPORT",
+    "date": "2025-01-25",
+    "notes": "Flights and hotel — 2 team members for client meeting in Mumbai. 3 day trip."
+  },
+  {
+    "amount": "15000.00",
+    "record_type": "EXPENSE",
+    "category": "TRAVEL_TRANSPORT",
+    "date": "2025-02-18",
+    "notes": "Cab reimbursements for team — late night work during product launch week."
+  },
+  {
+    "amount": "62000.00",
+    "record_type": "EXPENSE",
+    "category": "TRAVEL_TRANSPORT",
+    "date": "2025-03-14",
+    "notes": "CTO flight and accommodation — Singapore trip for investor meeting. 4 days."
+  },
+  {
+    "amount": "22000.00",
+    "record_type": "EXPENSE",
+    "category": "TRAVEL_TRANSPORT",
+    "date": "2025-04-22",
+    "notes": "Sales team travel — Pune and Hyderabad client visits. Train + hotel bookings."
+  },
+
+  {
+    "amount": "75000.00",
+    "record_type": "EXPENSE",
+    "category": "LEGAL_COMPLIANCE",
+    "date": "2025-01-28",
+    "notes": "Retainer fee — corporate law firm (Nishith Desai Associates). January advisory services."
+  },
+  {
+    "amount": "45000.00",
+    "record_type": "EXPENSE",
+    "category": "LEGAL_COMPLIANCE",
+    "date": "2025-02-15",
+    "notes": "CA firm fees — annual GST filing, TDS returns, and quarterly compliance for Q3 FY24-25."
+  },
+  {
+    "amount": "30000.00",
+    "record_type": "EXPENSE",
+    "category": "LEGAL_COMPLIANCE",
+    "date": "2025-03-28",
+    "notes": "DPDP Act compliance audit — data privacy assessment by external consultant."
+  },
+  {
+    "amount": "75000.00",
+    "record_type": "EXPENSE",
+    "category": "LEGAL_COMPLIANCE",
+    "date": "2025-04-28",
+    "notes": "Retainer fee — April. Plus trademark registration filing for product name."
+  },
+
+  {
+    "amount": "8500.00",
+    "record_type": "EXPENSE",
+    "category": "OTHER_EXPENSE",
+    "date": "2025-01-30",
+    "notes": "Office cleaning and housekeeping services — January."
+  },
+  {
+    "amount": "12000.00",
+    "record_type": "EXPENSE",
+    "category": "OTHER_EXPENSE",
+    "date": "2025-02-25",
+    "notes": "Courier and printing charges — pitch decks for enterprise sales meetings."
+  },
+  {
+    "amount": "8500.00",
+    "record_type": "EXPENSE",
+    "category": "OTHER_EXPENSE",
+    "date": "2025-03-30",
+    "notes": "Office cleaning and housekeeping — March."
+  },
+  {
+    "amount": "5000.00",
+    "record_type": "EXPENSE",
+    "category": "OTHER_EXPENSE",
+    "date": "2025-04-15",
+    "notes": "Miscellaneous office supplies — whiteboards, markers, stationery restock."
+  },
+
+  {
+    "amount": "850000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-01-10",
+    "notes": "Invoice #INV-2025-001 — Tata Digital Ltd. Q1 platform usage fee. Payment received via RTGS."
+  },
+  {
+    "amount": "620000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-01-25",
+    "notes": "Invoice #INV-2025-002 — MedPlus Health Services. Onboarding + first month platform fee."
+  },
+  {
+    "amount": "850000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-02-10",
+    "notes": "Invoice #INV-2025-003 — Tata Digital Ltd. February platform usage fee."
+  },
+  {
+    "amount": "480000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-02-22",
+    "notes": "Invoice #INV-2025-004 — Freshworks Inc. Custom integration project — Milestone 1 of 3 cleared."
+  },
+  {
+    "amount": "850000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-03-10",
+    "notes": "Invoice #INV-2025-005 — Tata Digital Ltd. March platform fee."
+  },
+  {
+    "amount": "480000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-03-25",
+    "notes": "Invoice #INV-2025-006 — Freshworks Inc. Custom integration — Milestone 2 cleared."
+  },
+  {
+    "amount": "940000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-04-10",
+    "notes": "Invoice #INV-2025-007 — Tata Digital Ltd. April fee — contract renewed at revised rate."
+  },
+  {
+    "amount": "620000.00",
+    "record_type": "INCOME",
+    "category": "CLIENT_REVENUE",
+    "date": "2025-04-20",
+    "notes": "Invoice #INV-2025-008 — MedPlus Health Services. April platform fee."
+  },
+
+  {
+    "amount": "125000.00",
+    "record_type": "INCOME",
+    "category": "PRODUCT_SALES",
+    "date": "2025-01-15",
+    "notes": "Lifetime deal sales — 5 licenses sold via AppSumo campaign. January batch."
+  },
+  {
+    "amount": "98000.00",
+    "record_type": "INCOME",
+    "category": "PRODUCT_SALES",
+    "date": "2025-02-18",
+    "notes": "Lifetime deal sales — 4 licenses. AppSumo campaign extended for one more month."
+  },
+  {
+    "amount": "45000.00",
+    "record_type": "INCOME",
+    "category": "PRODUCT_SALES",
+    "date": "2025-03-22",
+    "notes": "Direct product license sales — 2 SMB customers via website checkout."
+  },
+  {
+    "amount": "72000.00",
+    "record_type": "INCOME",
+    "category": "PRODUCT_SALES",
+    "date": "2025-04-28",
+    "notes": "Direct product license sales — 3 customers. Conversion from free trial."
+  },
+
+  {
+    "amount": "380000.00",
+    "record_type": "INCOME",
+    "category": "SUBSCRIPTION_REVENUE",
+    "date": "2025-01-01",
+    "notes": "Monthly SaaS subscription revenue — January. 42 active subscribers across Starter and Pro plans."
+  },
+  {
+    "amount": "395000.00",
+    "record_type": "INCOME",
+    "category": "SUBSCRIPTION_REVENUE",
+    "date": "2025-02-01",
+    "notes": "Monthly SaaS subscriptions — February. 44 active subscribers. 2 new pro plan upgrades."
+  },
+  {
+    "amount": "420000.00",
+    "record_type": "INCOME",
+    "category": "SUBSCRIPTION_REVENUE",
+    "date": "2025-03-01",
+    "notes": "Monthly SaaS subscriptions — March. 47 active subscribers. Churn: 1, New: 4."
+  },
+  {
+    "amount": "445000.00",
+    "record_type": "INCOME",
+    "category": "SUBSCRIPTION_REVENUE",
+    "date": "2025-04-01",
+    "notes": "Monthly SaaS subscriptions — April. 50 active subscribers. First month crossing 50 mark."
+  },
+
+  {
+    "amount": "250000.00",
+    "record_type": "INCOME",
+    "category": "CONSULTING",
+    "date": "2025-01-20",
+    "notes": "Technical consulting engagement — Zepto. Backend architecture review and recommendations. 5 day engagement."
+  },
+  {
+    "amount": "180000.00",
+    "record_type": "INCOME",
+    "category": "CONSULTING",
+    "date": "2025-03-12",
+    "notes": "Data strategy consulting — early stage startup (NDA signed). 3 day workshop and report."
+  },
+  {
+    "amount": "300000.00",
+    "record_type": "INCOME",
+    "category": "CONSULTING",
+    "date": "2025-04-05",
+    "notes": "API design and security audit — fintech client. Deliverable: audit report + recommendations deck."
+  },
+
+  {
+    "amount": "5000000.00",
+    "record_type": "INCOME",
+    "category": "INVESTMENT_FUNDING",
+    "date": "2025-02-01",
+    "notes": "Pre-Series A bridge round — ₹50 lakhs received from existing angel investors. Tranche 1 of 2."
+  },
+  {
+    "amount": "5000000.00",
+    "record_type": "INCOME",
+    "category": "INVESTMENT_FUNDING",
+    "date": "2025-04-01",
+    "notes": "Pre-Series A bridge round — Tranche 2 of 2. Funds to be deployed for hiring and infra scaling."
+  },
+
+  {
+    "amount": "18500.00",
+    "record_type": "INCOME",
+    "category": "INTEREST_INCOME",
+    "date": "2025-01-31",
+    "notes": "Interest earned on company FD — HDFC Bank. ₹50L FD at 7.1% annual rate. Monthly credit."
+  },
+  {
+    "amount": "18500.00",
+    "record_type": "INCOME",
+    "category": "INTEREST_INCOME",
+    "date": "2025-02-28",
+    "notes": "Interest earned on company FD — February credit."
+  },
+  {
+    "amount": "18500.00",
+    "record_type": "INCOME",
+    "category": "INTEREST_INCOME",
+    "date": "2025-03-31",
+    "notes": "Interest earned on company FD — March credit."
+  },
+  {
+    "amount": "18500.00",
+    "record_type": "INCOME",
+    "category": "INTEREST_INCOME",
+    "date": "2025-04-30",
+    "notes": "Interest earned on company FD — April credit."
+  },
+
+  {
+    "amount": "800000.00",
+    "record_type": "INCOME",
+    "category": "GRANT_SUBSIDY",
+    "date": "2025-03-01",
+    "notes": "Startup India Seed Fund Scheme — first disbursement. Approved for product development and market expansion."
+  },
+
+  {
+    "amount": "15000.00",
+    "record_type": "INCOME",
+    "category": "OTHER_INCOME",
+    "date": "2025-02-10",
+    "notes": "Speaker fee — CEO keynote at TechSparks 2025 Bengaluru edition."
+  },
+  {
+    "amount": "28000.00",
+    "record_type": "INCOME",
+    "category": "OTHER_INCOME",
+    "date": "2025-04-16",
+    "notes": "Subleased conference room to partner company for 2 days. Ad-hoc arrangement."
+  }
+]
